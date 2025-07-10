@@ -7,38 +7,38 @@ An AI-enhanced note-taking platform that transforms how you interact with your d
 ![Vite](https://img.shields.io/badge/Vite-5.0+-purple)
 ![Supabase](https://img.shields.io/badge/Supabase-Database-green)
 
-## ✨ Features
+## Features
 
-### 🤖 AI-Powered Intelligence
+### AI-Powered Intelligence
 - **Smart Summarization**: Get intelligent summaries of your content with `/summarize`
 - **Interactive Q&A**: Ask questions about your documents with `/ask`
 - **Retrieval-Augmented Generation (RAG)**: Context-aware AI responses
 - **Demo Mode**: Pre-written responses for default documents
 
-### 🧠 Knowledge Management
+### Knowledge Management
 - **Knowledge Graphs**: Automatically extract and visualize relationships between concepts
 - **Entity Recognition**: Identify people, places, and concepts across documents
 - **Connection Discovery**: Find hidden patterns in your knowledge base
 
-### 🔍 Advanced Search
+### Advanced Search
 - **Hybrid Search**: Combines keyword matching with semantic similarity
 - **Semantic Understanding**: Find content by meaning, not just keywords
 - **Document Filtering**: Search within specific documents or globally
 - **Real-time Results**: Fast, responsive search experience
 
-### 📄 Document Management
+### Document Management
 - **Multi-format Support**: Upload PDF, TXT, and Markdown files
 - **Rich Text Editor**: Powered by Tiptap with formatting tools
 - **Auto-save**: Never lose your work with intelligent auto-saving
 - **Document Viewer**: Clean, readable document display with scrolling
 
-### 🎨 Modern Interface
+### Modern Interface
 - **Responsive Design**: Works seamlessly on desktop and mobile
 - **Dark Theme**: Easy on the eyes with professional styling
 - **Intuitive Navigation**: Clean, modern interface design
 - **Real-time Feedback**: Loading states and progress indicators
 
-## 🚀 Live Demo
+## Live Demo
 
 Visit the live application: [NeuraNotes on Vercel](https://neuranotes.vercel.app)
 
@@ -48,7 +48,7 @@ The app comes with three pre-loaded documents for demonstration:
 - **Steve Jobs at Stanford**: Inspirational speech and life lessons
 - **Getting Started Guide**: Platform features and usage instructions
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Frontend**: React 18 + Vite
 - **Editor**: Tiptap (rich text editing)
@@ -58,7 +58,7 @@ The app comes with three pre-loaded documents for demonstration:
 - **Styling**: Tailwind CSS
 - **Deployment**: Vercel
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Node.js 18+
@@ -104,7 +104,7 @@ npm run dev
 
 Visit `http://localhost:5173` to see the application.
 
-## 🎯 Usage
+## Usage
 
 ### Getting Started
 1. **Upload Documents**: Use the upload button to add PDF, TXT, or MD files
@@ -123,7 +123,7 @@ In the editor, use these commands:
 - **Keyword**: Traditional text matching
 - **Semantic**: Meaning-based search using AI embeddings
 
-## 🧪 Demo Mode
+## Demo Mode
 
 NeuraNotes includes a demo mode that works without OpenAI API:
 - Pre-written intelligent responses for default documents
@@ -131,22 +131,22 @@ NeuraNotes includes a demo mode that works without OpenAI API:
 - Complete search functionality
 - Professional user experience
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👩‍💻 Author
+## Author
 
 **Yiran (Hazel) Li**
 M.E.T @CMU School of Computer Science
 📧 [yiranli@andrew.cmu.edu](mailto:yiranli@andrew.cmu.edu)
 📱 [510-813-2075](tel:5108132075)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with modern web technologies and AI capabilities
 - Inspired by the need for intelligent document management
