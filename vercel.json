@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "api/ask-rag.js": {
+      "maxDuration": 30
+    }
+  },
+  "env": {
+    "OPENAI_API_KEY": "@openai-api-key",
+    "SUPABASE_URL": "@supabase-url", 
+    "SUPABASE_SERVICE_ROLE_KEY": "@supabase-service-role-key"
+  }
+}

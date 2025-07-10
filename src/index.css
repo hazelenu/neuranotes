@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TipTap placeholder styling */
+.ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: rgba(255, 255, 255, 0.6);
+  pointer-events: none;
+  height: 0;
+}
+
+/* Editor text styling for dark background */
+.ProseMirror {
+  color: white;
+}
+
+.ProseMirror p {
+  color: white;
+}
+
+/* Slash command styling */
+.slash-command-decoration {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Summary text styling */
+.summary-text {
+  color: #87ceeb; /* sky-300 equivalent */
+}
+
+/* List styling */
+.ProseMirror ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  padding-left: 0;
+}
+
+.ProseMirror ol {
+  list-style-type: decimal;
+  margin-left: 1.5rem;
+  padding-left: 0;
+}
+
+.ProseMirror li {
+  margin: 0.25rem 0;
+  padding-left: 0.5rem;
+}
