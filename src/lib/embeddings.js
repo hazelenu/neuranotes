@@ -1,11 +1,21 @@
 import OpenAI from 'openai'
 import { supabase } from './supabase'
 
-// Initialize OpenAI client
-const openai = new OpenAI({
-  apiKey: import.meta.env.VITE_OPENAI_API_KEY,
-  dangerouslyAllowBrowser: true // Note: In production, this should be done server-side
-})
+// Initialize OpenAI client with error handling
+let openai = null
+try {
+  const apiKey = import.meta.env.VITE_OPENAI_API_KEY
+  if (apiKey) {
+    openai = new OpenAI({
+      apiKey: apiKey,
+      dangerouslyAllowBrowser: true // Note: In production, this should be done server-side
+    })
+  } else {
+    console.warn('OpenAI API key not found. Some features will be disabled.')
+  }
+} catch (error) {
+  console.warn('Failed to initialize OpenAI client:', error.message)
+}
 
 /**
  * Split text into chunks of approximately 200 tokens each
@@ -73,13 +83,17 @@ const splitIntoChunks = (text) => {
  * @returns {Promise<number[]>} - The embedding vector
  */
 const getEmbedding = async (text) => {
+  if (!openai) {
+    throw new Error('OpenAI client not initialized. Please check your API key configuration.')
+  }
+
   try {
     const response = await openai.embeddings.create({
       model: 'text-embedding-3-large',
       input: text,
       encoding_format: 'float'
     })
-    
+
     return response.data[0].embedding
   } catch (error) {
     console.error('Error getting embedding:', error)
@@ -195,3 +209,4 @@ export const searchSimilarChunks = async (query, limit = 5) => {
     throw error
   }
 }
+
